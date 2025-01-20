@@ -13,9 +13,9 @@
 #
 ---
 include:
-  - board: nRF52840-nicenano
+  - board: nice_nano_v2
     shield: corne_left
-  - board: nRF52840-nicenano
+  - board: nice_nano_v2
     shield: corne_right
-  - board: nRF52840-nicenano
+  - board: nice_nano_v2
     shield: settings_reset
