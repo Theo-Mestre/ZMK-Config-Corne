@@ -38,7 +38,7 @@
 &kp TAB    &kp SQT  &kp AT           &kp LESS_THAN   &kp GREATER_THAN  &kp DOUBLE_QUOTES    &kp AMPERSAND  &kp COLON   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &kp BSPC
 &kp LCTRL  &trans   &kp EXCLAMATION  &kp PLUS        &kp MINUS         &kp UNDERSCORE       &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &kp GRAVE
 &kp LSHFT  &trans   &kp EQUAL        &kp ASTERISK    &kp SLASH         &kp BACKSLASH        &kp TILDE      &kp DOLLAR  &kp LEFT_BRACE        &kp RBRC               &kp AT_SIGN   &kp TILDE
-                                     &kp LEFT_SHIFT  &trans            &kp SPACE            &kp RET        &trans      &kp RCTRL
+                                     &kp LEFT_SHIFT  &trans            &kp SPACE            &kp RET        &tog 4      &kp SPACE
             >;
         };
 
@@ -50,10 +50,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC   &kp DEL            &kp N0           &kp N1     &kp N2  &kp N3       &kp F1          &kp F2          &kp F3           &kp F4   &kp F5   &kp BSPC
-&kp LGUI  &kp C_PREV         &kp C_NEXT       &kp N4     &kp N5  &kp N6       &kp F6          &kp UP_ARROW    &kp F7           &kp F8   &kp F9   &kp TAB
-&kp TAB   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp N7     &kp N8  &kp N9       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F10  &kp F11  &kp F12
-                                              &kp LCTRL  &mo 3   &kp SPACE    &kp RET         &trans          &kp LSHFT
+&kp ESC         &kp DEL    &kp N0        &kp N1     &kp N2  &kp N3       &kp ESCAPE      &kp BACKSPACE   &kp DELETE       &trans  &kp C_PLAY_PAUSE   &kp C_MUTE
+&kp LGUI        &trans     &trans        &kp N4     &kp N5  &kp N6       &trans          &kp UP_ARROW    &trans           &trans  &kp C_PREVIOUS     &kp C_NEXT
+&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp N7     &kp N8  &kp N9       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+                                         &kp LCTRL  &mo 3   &kp SPACE    &kp RET         &trans          &kp LSHFT
             >;
         };
 
@@ -68,19 +68,19 @@
 
         LayerSwitcher {
             bindings = <
-&trans  &trans  &trans  &to 0   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &to 0   &to 1   &to 2   &to 4   &trans    &to 5   &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &to 0   &trans    &trans  &trans  &trans
+                        &trans  &trans  &to 0     &trans  &trans  &trans
             >;
         };
 
         ExempleLayer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &to 0   &trans    &trans  &trans  &trans
+&kp TAB    &kp Q      &kp W  &kp E      &kp R      &kp T        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp A      &kp S  &kp D      &kp F      &kp G        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LALT   &kp LCTRL  &kp W  &kp X      &kp C      &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+                             &kp LCTRL  &kp LSHFT  &kp SPACE    &to 4   &trans  &trans
             >;
         };
     };
