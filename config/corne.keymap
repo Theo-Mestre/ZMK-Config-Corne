@@ -77,10 +77,10 @@
 
         ExempleLayer {
             bindings = <
-&kp TAB    &kp Q      &kp W  &kp E      &kp R      &kp T        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp A      &kp S  &kp D      &kp F      &kp G        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LALT   &kp LCTRL  &kp W  &kp X      &kp C      &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                             &kp LCTRL  &kp LSHFT  &kp SPACE    &to 4   &trans  &trans
+&kp TAB    &kp Q      &kp W  &kp E      &kp R      &kp T        &kp Y  &kp U   &kp I   &kp O    &kp P     &kp ENTER
+&kp LCTRL  &kp A      &kp S  &kp D      &kp F      &kp G        &kp H  &kp J   &kp K   &kp L    &kp CAPS  &kp RSHFT
+&kp LALT   &kp LCTRL  &kp W  &kp X      &kp C      &kp V        &kp B  &kp N   &kp M   &kp ESC  &kp BSPC  &kp RCTRL
+                             &kp LCTRL  &kp LSHFT  &kp SPACE    &to 4  &trans  &trans
             >;
         };
     };
